@@ -42,6 +42,11 @@ return {
 			lspconfig.cssls.setup {
 				on_attach = on_attach,
 				capabilities = capabilities,
+				settings = {
+					css = {
+						validate = false,
+					}
+				}
 			}
 			lspconfig.tailwindcss.setup {
 				on_attach = on_attach,
