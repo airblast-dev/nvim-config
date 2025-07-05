@@ -1,5 +1,5 @@
 local lsps = {
-  'luals',
+  'lua_ls',
   'clangd',
   'bacon_ls',
 }

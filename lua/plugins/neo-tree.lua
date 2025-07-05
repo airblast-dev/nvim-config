@@ -16,4 +16,7 @@ return {
   opts = {
     -- add options here
   },
+  keys = {
+	  {' t', '<cmd>Neotree toggle<cr>', desc = 'NeoTree Toggle'}
+  }
 }
