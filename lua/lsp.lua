@@ -7,6 +7,11 @@ local lsps = {
 	'cmake',
 }
 
+local add_desc = function(opts, desc)
+	opts.desc = desc
+	return opts
+end
+
 vim.lsp.enable(lsps)
 local on_attach = function(client, bufnr)
 	-- Enable completion triggered by <c-x><c-o>
@@ -32,4 +37,4 @@ local on_attach = function(client, bufnr)
 	end, add_desc(bufopts, "Format File"))
 end
 
-vim.lsp.on_attach = on_attach
+vim.lsp.client.on_attach = on_attach
