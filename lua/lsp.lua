@@ -6,8 +6,8 @@ local lsps = {
 	'cmake',
 	'denols',
 	"ts_query_ls",
-	"gdscript"
+	"gdscript",
+	"gopls"
 }
 
 vim.lsp.enable(lsps)
-
